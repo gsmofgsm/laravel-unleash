@@ -120,6 +120,8 @@ class Unleash
             return $this->formatResponse($data);
         } catch (\InvalidArgumentException $e) {
             return [];
+        } catch (\Exception $e) {
+            return [];
         }
     }
 
